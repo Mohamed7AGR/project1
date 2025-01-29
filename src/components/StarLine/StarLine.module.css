@@ -1,0 +1,6 @@
+.StarLine {}
+.line{
+    border: 3px solid #F7F7F7;
+    width: 100px;
+    height: fit-content;
+  }
