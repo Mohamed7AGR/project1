@@ -6,7 +6,7 @@ export default function Navbar() {
     <>
       <nav className="navbar navbar-expand-lg py-4 fixed-top z-2">
         <div className="container">
-          <Link className="navbar-brand fs-1 fw-bold text-white" to={"/"}>
+          <Link className="navbar-brand fs-1 fw-bold text-white" to="/">
             Start Framework
           </Link>
           <button
@@ -25,7 +25,7 @@ export default function Navbar() {
               <li className="nav-item">
                 <NavLink
                   className="nav-link px-2 fs-5 fw-bold text-white"
-                  to={"about"}
+                  to="/about"
                 >
                   About
                 </NavLink>
@@ -33,7 +33,7 @@ export default function Navbar() {
               <li className="nav-item">
                 <NavLink
                   className="nav-link px-2 fs-5 fw-bold text-white"
-                  to={"portfolio"}
+                  to="/portfolio"
                 >
                   Portfolio
                 </NavLink>
@@ -41,7 +41,7 @@ export default function Navbar() {
               <li className="nav-item">
                 <NavLink
                   className="nav-link px-2 fs-5 fw-bold text-white"
-                  to={"contact"}
+                  to="/contact"
                 >
                   Contact
                 </NavLink>

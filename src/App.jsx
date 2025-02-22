@@ -1,6 +1,7 @@
 import {
   createBrowserRouter,
   Navigate,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
@@ -11,16 +12,16 @@ import NotFound from "./components/NotFound/NotFound";
 import Portfolio from "./components/Portfolio/Portfolio";
 
 function App() {
-  const router = createBrowserRouter([
+  
+  let router = createHashRouter([
     {
       path: "",
       element: <Layout />,
       children: [
-        { path: "", element: <Home /> },
-        { path: "/home", element: <Navigate to={"/"} /> },
+        { path: "/", element: <Home /> },
         { path: "/about", element: <About /> },
-        { path: "/contact", element: <Contact /> },
         { path: "/portfolio", element: <Portfolio /> },
+        { path: "/contact", element: <Contact /> },
         { path: "*", element: <NotFound /> },
       ],
     },
